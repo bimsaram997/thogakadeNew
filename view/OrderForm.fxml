@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="787.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.controller.OrderFormController">
+   <children>
+      <Label layoutX="298.0" layoutY="7.0" text="Order Form">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl" layoutX="29.0" layoutY="134.0" prefHeight="262.0" prefWidth="730.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="179.0" text="Id" />
+          <TableColumn fx:id="colDate" prefWidth="235.0" text="Date" />
+            <TableColumn fx:id="colCustId" prefWidth="199.0" text="Customer Id" />
+            <TableColumn fx:id="colOperate" prefWidth="116.0" text="Operate" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="29.0" layoutY="58.0" onAction="#filterOnAction" prefHeight="31.0" prefWidth="235.0" promptText="ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtDate" layoutX="275.0" layoutY="58.0" prefHeight="31.0" prefWidth="220.0" promptText="Date">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtCustId" layoutX="505.0" layoutY="58.0" prefHeight="31.0" prefWidth="220.0" promptText="Customer Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField layoutX="29.0" layoutY="96.0" prefHeight="31.0" prefWidth="560.0" promptText="Search" />
+   </children>
+</AnchorPane>

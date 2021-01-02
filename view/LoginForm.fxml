@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="448.0" prefWidth="585.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="181.0" fitWidth="592.0" layoutX="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/h.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="181.0" prefWidth="585.0" style="-fx-background-color: rgba(44, 62, 80,0.5);">
+         <children>
+            <Label alignment="CENTER" layoutY="63.0" prefHeight="56.0" prefWidth="585.0" text="SIGN IN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField labelFloat="true" layoutX="156.0" layoutY="200.0" prefHeight="37.0" prefWidth="290.0" promptText="User Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField labelFloat="true" layoutX="156.0" layoutY="273.0" prefHeight="37.0" prefWidth="290.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="156.0" layoutY="340.0" onAction="#loginOnAction" prefHeight="39.0" prefWidth="290.0" style="-fx-background-color: rgba(52, 152, 219,1.0);" text="Sign Me In Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Hyperlink layoutX="357.0" layoutY="399.0" text="I'm New Here I Want an Accoun !" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
